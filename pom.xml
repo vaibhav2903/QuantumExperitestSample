@@ -14,7 +14,7 @@
 		<reportium-sdk.version>2.3</reportium-sdk.version>
 		<testng.version>6.10</testng.version>
 		<cukes.version>1.2.5</cukes.version>
-		<quantum.version>1.21</quantum.version>
+		<quantum.version>1.21.2</quantum.version>
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -76,6 +76,17 @@
 			<id>jai</id>
 			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
 		</repository> 
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</releases>
+			<id>Experitest.repo1</id>
+			<name>YourName</name>
+			<url>https://cloud.experitest.com/repo/</url>
+			<layout>default</layout>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -118,6 +129,11 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.experitest</groupId>
+			<artifactId>appium-seetest-extension</artifactId>
+			<version>20.7</version>
 		</dependency>
 	</dependencies>
 </project>
